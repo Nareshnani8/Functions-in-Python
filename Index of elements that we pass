@@ -1,0 +1,5 @@
+def ind(c):
+    """This works for printing index and values"""
+    if type(c) == list:
+        for i in enumerate(c):
+            print(i)
