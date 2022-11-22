@@ -1,0 +1,8 @@
+def length_string(s):
+    """This function helps to find length of string without using len() and you should give input string"""
+    count=0
+    for i in s:
+        count=count+1
+    return count
+    
+length_string('Naresh is a big data engineer')
