@@ -1,0 +1,13 @@
+values_list = []
+def values(d):
+    for i in d:
+    '''Take single or nested dictionary print values in list'''
+        if type(d) == dict:
+            values(d[i])
+        else:
+            values_list.append(d[i])
+    return values_list
+
+
+values(dictionary)
+    
