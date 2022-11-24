@@ -1,0 +1,9 @@
+def word(filename):
+    
+    '''Function to read Word file'''
+    f=open(filename+'.doc',rb)
+    print(f.read())
+    
+filename =input('enter file name')
+
+word(filename)
