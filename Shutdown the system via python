@@ -1,0 +1,7 @@
+def shutdown():
+    """To shutdown the system"""
+    import os
+    
+    os.system('shutdown /s /t 1')   #/s for shutdown /t for delaytime and 1 is for 1 second delay
+
+shutdown()
