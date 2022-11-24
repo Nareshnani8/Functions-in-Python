@@ -1,0 +1,12 @@
+def image():
+    '''Function to read image file and display as output'''
+    
+    import PIL
+    from PIL import Image
+    img = Image.open(filename,'r')
+    
+    return display(img)
+
+filename = input('Please enter the image file name with .jpg extension')
+
+image(filename)
