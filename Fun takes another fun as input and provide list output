@@ -1,0 +1,15 @@
+#Fun takes another fun as input and provide list output
+
+def fun4(n):
+    '''This function generated random numbers'''
+    return list(range(n))
+
+def fun4_1(fun):
+    '''This fun takes another fun as argument and give list as output'''
+    l1 = []
+    if type(fun) == list:
+        for i in fun:
+            l1.append(i+2)
+        return l1
+        
+ fun4_1(fun4(5))
