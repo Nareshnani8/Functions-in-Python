@@ -1,0 +1,8 @@
+def ip():
+    '''Function to print IP Address of system'''
+    import socket
+    name = socket.gethostname()
+    ip_address = socket.gethostbyname(name)
+    print(f'system name is {name} and ip address is {ip_address}')
+
+ip()
