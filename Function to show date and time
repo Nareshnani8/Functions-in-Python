@@ -1,0 +1,13 @@
+def Time_Func():
+    '''To show date and time'''
+    import subprocess as sb
+    from subprocess import time
+    a = time.localtime()
+    #print(a)
+    
+    Date = str(a[0])+ '-' +str(a[1]) + '-' +str(a[2])
+    Time = str(a[3])+ '-' +str(a[4]) + '-' +str(a[5])
+    
+    return "The date is " +Date + " and the time is " +Time
+
+Time_Func()
