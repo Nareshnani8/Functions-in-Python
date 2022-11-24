@@ -7,6 +7,6 @@ def image():
     
     return display(img)
 
-filename = input('Please enter the image file name with .jpg extension')
+file_name = input('Please enter the image file name with .jpg extension')
 
-image(filename)
+image(file_name)
