@@ -1,0 +1,6 @@
+def fun7(path):
+    '''Dir path as input and produce all files inside dir as output'''
+    import os
+    return os.listdir(path)
+
+fun7('C:\\Users\DELL')
