@@ -1,0 +1,35 @@
+#pip install pyPDF2
+
+def new_file(file1,file2,file3):
+    '''Function to append 2 pdf files to new file'''
+    import pyPDF2 as pdf
+    
+    f1=open(file1+'.pdf',rb)
+    f2=open(file2+'.pdf',rb)
+    f3=open(file3+'.pdf',wb)
+    
+    f1_read = pdf.PdfFileReader(f1)
+    f2_read = pdf.PdfFileReader(f2)
+    
+    f_writer = pdf.PdfFileWriter()
+    
+    for page_no in range(f1_read.numPages):
+        f1_pages = f1_read.getPage(page_no)
+        f_writer.addPage(f1_pages)
+    
+    for page_no in range(f2_read.numPages):
+        f2_pages = f2_read.getPage(page_no)
+        f_writer.addPage(f2_pages)
+        
+    f_writer.write(f3)
+    
+    f1.close()
+    f2.close()
+    f3.close()
+    
+file_1 = input('enter the 1st file name')
+file_2 = input('enter the 2nd file name')
+file_3 = input('enter the file name to be created')
+
+new_file(file_1,file_2,file_3)
+    
