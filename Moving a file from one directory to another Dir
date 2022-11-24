@@ -1,0 +1,10 @@
+def file_move(src_path,dst_path):
+    '''Moving a file from one directory to another Dir'''
+    
+    import shutil
+    
+    shutil.move(src_path,dst_path)
+    
+    src_path = input('Enter the source file directory path')
+    
+    dst_path = input('Enter the destination file directory path')
