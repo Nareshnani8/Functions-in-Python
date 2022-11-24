@@ -1,0 +1,20 @@
+#pip install pyPDF2
+
+def pdf(filename):
+    '''Function to read complete PDF'''
+    
+    import pyPDF2 as pdf
+    f= open(filename+'.pdf',rb)
+    print(f)
+    
+    f_read = pdf.PdfFileReader(f)
+    
+    f_page = f_read.getPage(0)
+    
+    print(f_page.extractText())
+    
+    f.close()
+
+filename = input('provide your pdf file name')
+
+pdf(filename)
