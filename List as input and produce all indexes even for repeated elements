@@ -1,0 +1,11 @@
+def fun6(l):
+    '''List as input and produce all indexes even for repeated elements'''
+    if type(l) == list:
+        l1=[]
+        for i in range(len(l)):
+            l1.append(f'The index of element {l[i]} is {i}')
+    else:
+        return 'provided input is not a list'
+    return l1
+
+fun6([1,4,7,9,14,27,7])
