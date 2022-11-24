@@ -1,0 +1,6 @@
+def fun8():
+    '''System configuration function'''
+    import platform as pf
+    return pf.uname()
+
+fun8()
